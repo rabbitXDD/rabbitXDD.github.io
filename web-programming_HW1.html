@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <title>課程詳細資料</title>
     <style type="text/css">
-    	body{
-    		/*background-color: #CCFFFF;*/
-    	}
+
     	header{
             font-size: 18px;
             height:30px;
@@ -17,27 +15,8 @@
             color:black;
             
     	}
-    	div{
-    		height:300px;
-            width:300px;
-            border:#6495ED;
-            background-color:#E0E0E0;
-    	}
-    	.class_table{
-    		font-size: 16px;
-    		font-family:新細明體;
-
-    	}
-		#blue{
+		h3{
 			color: blue;
-		}
-		#data{
-			text-align: left;
-		}
-		#chart{
-			text-align: center;
-			font-size: 18px;
-			color: #B88A00;
 		}
 	    #sidebar {
 			  float: right;
@@ -52,14 +31,10 @@
 	    section{
 	    	float: left;
 	    }
-    	/*.hearder_decorate{
-            height:30px;
-            width:40px;
-            border:#6495ED;
-            background-color:#FF9900;
+	    #bottom{
+	    	padding-bottom:40px;
+	    }
 
-
-    	}*/
     </style>
   </head>
   <body>
@@ -68,43 +43,32 @@
   		</header>
 		<section>
 			<article>
-				<table border="1" class="class_table">
-				  <tr>
-				    <th rowspan="1" colspan="1" id="blue">學年/學期<br> Academic Year/Semester</th>
-				    <th colspan="4" id="data">103 學年 第 2 學期</th>
-				  </tr>
-				  <tr>
-				    <th rowspan="2" colspan="2" id="blue">課程名稱 Course Name<br> 781007-001</th>
-				    <th rowspan="1" colspan="3" id="data">(中 Ch.)Ｗeb程式設計</th>	
-				  </tr>
-				  <tr> 
-					<th colspan="3" id="data">(英 Eng.)Web Programming</th>
-				  </tr>
-				  <tr>
-				  	<th rowspan="1" colspan="2" id="blue"> 授課教師 Instructor </th>
-				  	<th colspan="3" id="data">余能豪</th>
-				  </tr>
-				  <tr>
-				  	<th rowspan="1" colspan="2" id="blue"> 修別 Type of Credit </th>
-				  	<th colspan="1" id="data">群修</th> <th colspan="1" id="blue">學分數<br>No. of Credits</th> <th colspan="1" id="data">3.0</th>
-				  </tr>		  
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="blue">備註Note</th>
-				  </tr>
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="data">限學程同學方得修習</th>
-				  </tr>			
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="blue">課程目標 Course objectives</th>
-				  </tr>
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="data">本課程旨在介紹WWW的基本運作原理並以其為平台開發應用程式<br>，包含HTML5/CSS3動態網頁製作、網頁物件模型(DOM)、JavaScript<br>程式設計與雲端應用等。</th>
-				  </tr>	  
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="blue">上課進度</th>
-				  </tr>
-				  <tr>
-				  	<th rowspan="1" colspan="5"  id="data">
+				
+				  
+				    <h3>學年/學期 Academic Year/Semester</h3> 
+					<p>103 學年 第 2 學期</p>
+				
+				    <h3>課程名稱 Course Name 781007-001</h3>
+				    
+				    <ul>
+				    	<li>(中 Ch.)Ｗeb程式設計</li>
+				    	<li>(英 Eng.)Web Programming</li>
+				    </ul>
+
+				    <h3>授課教師 Instructor </h3>
+				  	<p>余能豪</p>
+					
+				    <h3>修別 Type of Credit</h3>
+				    <p>群修</p>
+				    <h3>學分數 No. of Credits</h3>
+				    <p>3.0</p>
+				    <h3>備註Note</h3>
+				    <p>限學程同學方得修習</p>
+
+				    <h3>課程目標 Course objectives</h3>
+				    本課程旨在介紹WWW的基本運作原理並以其為平台開發應用程式<br>，包含HTML5/CSS3動態網頁製作、網頁物件模型(DOM)、JavaScript<br>程式設計與雲端應用等。
+				    <h3>上課進度</h3>
+
 				  		<ol>
 				  			<li>Course Introduction / Git</li>
 				  			<li>HTML5</li>
@@ -118,75 +82,65 @@
 				  			<li>Javascript (I) / DOM</li>
 				  			<li>Javascript (II) / JQuery</li>
 				  			<li>Parse / JSON</li>
-				  			<li>校慶運動會/li>
+				  			<li>校慶運動會</li>
 				  			<li>Heroku / Node.js</li>
 				  			<li>Websocket</li>
 				  			<li>Guest speaker</li>
 				  			<li>Google Analytics</li>
 				  			<li>Final demo</li>
 				  		</ol>
-					</th>
-				  </tr>	  
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="blue">課程要求/評分標準 Course requirements/Grading standards</th>
-				  </tr>
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="data">課堂作業(35%) 、期中作業(20%)及期末實作成品成果展示(30%)</th>
-				  </tr>
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="blue">參考書目 Textbook & references（為維護智慧財產權，請務必使用正版書籍）</th>
-				  </tr>
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="data">
-				  		. Eric Freeman, Elisabeth Robson(2011), Head First HTML5 Programming: Building Web <br>Apps with JavaScript, O'Reilly<br> . Crockford Douglas, JavaScript: The Good Parts, O'Reilly</th>
-				  </tr>
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="blue">本課程附件 Course attachments</th>
-				  </tr>
-				  <tr>
-				  	<th rowspan="1" colspan="5" id="data">N/A<br><br><br><br><br><br></th>
-				  </tr>
-				</table>
+
+				  	<h3>課程要求/評分標準 Course requirements/Grading standards</h3>
+				  	<ul>
+					  	<li>課堂作業(35%)</li>
+					  	<li>期中作業(20%)</li>
+					  	<li>期末實作成品成果展示(30%)</li> 				  		
+				  	</ul>
+
+				  	<h3>參考書目 Textbook & references（為維護智慧財產權，請務必使用正版書籍）</h3>
+				  	<ul>
+				  		<li>. Eric Freeman, Elisabeth Robson(2011)</li>
+				  		<li>Head First HTML5 Programming: Building Web</li>
+				  		<li>Apps with JavaScript, O'Reilly</li>
+				  		<li>. Crockford Douglas, JavaScript: The Good Parts, O'Reilly</li>
+				  	</ul>
+				  	<h3>本課程附件 Course attachments</h3>
+				  	<p class="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A</p>
+				  	
+
 			</article>
 		</section>
 		<section>
 			<aside id="sidebar">
-				<table border = "1">
-					<tr>
-						<th id="chart"><strong>核心能力分析圖</strong><br>
-							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<strong>Core competence analysis chart</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
-					</tr>
-					<tr>
-						<th>
-							<img src="http://i.imgur.com/4ZmLvoB.png">
-						</th>
-					</tr>
-					<tr>
-						<th>
+
+						<strong>核心能力分析圖<br>Core competence analysis chart</strong><br>
+						<hr>
+						<img src="http://i.imgur.com/4ZmLvoB.png"><br>
+							<strong></strong>
+					<hr>		
+					
 						<dl>
 							<dt>能力項目說明：</dt>
-							<dd>A.具備發現與解決問題之能力	 &nbsp; &nbsp;&nbsp;B.具備敘事與美學能力<br>
-							C.具備科技研發與系統開發能力	 &nbsp; &nbsp;&nbsp;D.具備團隊合作力<br>
-							E.具備人文關懷與社會參與情操	 &nbsp; &nbsp;&nbsp;F.具備企劃整合與溝通能力<br></dd>
+							<dd>A.具備發現與解決問題之能力
+							<dd>B.具備敘事與美學能力
+							<dd>C.具備科技研發與系統開發能力
+							<dd>D.具備團隊合作力
+							<dd>E.具備人文關懷與社會參與情操	 
+							<dd>F.具備企劃整合與溝通能力<br></dd>
 						</dl>
-						</th>
-					</tr>
-					<tr>
-						<th id="chart"><strong>授課方式比例圖</strong><br>
-							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<strong>Teaching approach pie chart</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
-					</tr>
-					<tr>
-						<th>
+						
+					<hr>
+					
+						<strong>授課方式比例圖<br>Teaching approach pie chart</strong><br>
+						
+	
 							<img src="http://i.imgur.com/slQA6vf.png?1">
-						</th>
-					</tr>
-					<tr>
-						<th>
-							<em style="font-size:18px">application form</em><br>
+						
+			
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em style="font-size:18px">application form</em><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<a href="http://rabbitxdd.github.io/web-programming_HW1_application_form.html"><img src="http://www.usfsoft.com/index/img/xtbiaodan.jpg" title="點我查看申請表單！"> </a>
-						</th>
-					</tr>
-				</table>
+					
 			</aside>
 		</section>
 		
