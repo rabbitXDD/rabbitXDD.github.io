@@ -11,6 +11,8 @@
             width:400px; 
     	}
     	article{
+    		position: relative;
+    		max-width: 300px;
     		font-size: 18px;
     	}
     	header>strong{
