@@ -8,7 +8,7 @@
             background-color:rgba(252,242,031,0.6);
             border-radius: 10px;
             height:40px;
-            max-width:400px; 
+            width:400px; 
     	}
     	article{
     		font-size: 18px;
@@ -31,25 +31,25 @@
 	    #sidebar {
 			  float: right;
 			  margin: 0 10%;
-			  max-width: 90%;
+			  width: 90%;
 		    }
 	    
 	    img#ability{
 	    	position:absolute; 
-			  max-width:80%;
+			  width:80%;
 			  height:80%;
 			  border-radius: 10px;
 			  /*background-color:rgba(115,194,197,0.3);*/
 		    }
 		img#proportion{
 			position:absolute; 
-			max-width:80%;
+			width:80%;
 			height:80%;
 			border-radius: 10px;
 		}
 		img#form{
 			position: relative;
-			max-width:20%;
+			width:20%;
 		    padding:0.5em;
 		    border-radius: 10px;
 			left: 6em;
@@ -87,7 +87,7 @@
 	    	position: absolute;
 		    top: 0;
 		    left: -1.05em;
-		    max-width: 1em;
+		    width: 1em;
 		 
 		    font-size: 2.5em;
 		    line-height: 1;
@@ -110,7 +110,7 @@
 			background-color: rgba(50,198,145,0.4);
 		}
 		article div{
-			max-width: 500px;
+			width: 500px;
 			height: 100px;
 		}
 		article div:hover{
@@ -121,7 +121,7 @@
   position: relative;
   top:1.3em;
   left: 1.05em;
-  max-width: 400px;
+  width: 400px;
   height: 300px;
   background-color: #fff;
   box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
@@ -129,7 +129,7 @@
 }
 .box:before {
       position: absolute;
-      max-width: 80%;
+      width: 80%;
       height: 40%;
       left: 10%;
       border-radius: 50%;
@@ -140,7 +140,7 @@
       }
 .box:after {
       position: absolute;
-      max-width: 80%;
+      width: 80%;
       height: 40%;
       left: 10%;
       border-radius: 50%;
