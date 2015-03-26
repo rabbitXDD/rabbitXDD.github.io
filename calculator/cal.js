@@ -1,4 +1,3 @@
-confirm("haha");
 $(document).ready(function(){
 	var testNumLength = function(number) {
         if (number.length > 9) {
