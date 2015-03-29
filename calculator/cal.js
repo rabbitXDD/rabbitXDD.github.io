@@ -1,49 +1,59 @@
-$(document).ready(function(){
-	var testNumLength = function(number) {
-        if (number.length > 9) {
-            totaldiv.text(number.substr(number.length-9,9));
-            if (number.length > 15) {
-                number = "";
-                totaldiv.text("Err");
-            }
-        } 
-    };
-	var number = "";
-    var newnumber = "";
+$(function(){
+
+	var number_tmp = "";
+    var number_cal = "";
     var operator = "";
-    var totaldiv = $("#total");
-    totaldiv.text("0");
-    $("#numbers a").not("#clear,#clearall").click(function(){
-		number += $(this).text();
-		totaldiv.text(number);
-		testNumLength(number);
+    var currentText = $("#display");
+    currentText.text("0");
+    
+    $("#numbers button").on('click',function(){
+		if (number_tmp.length < 9) {
+			number_tmp += $(this).text();
+		}
+		else{
+			return;
+		}
+		currentText.text(number_tmp);
+
     });
-    $("#operators a").not("#equals").click(function(){
+    $("#operators button").on('click',function(){
 		operator = $(this).text();
-		newnumber = number;
-		number = "";
-		totaldiv.text("0");
+		number_cal = number_tmp;
+		number_tmp = "";
     });
-    $("#clear,#clearall").click(function(){
-		number = "";
-		totaldiv.text("0");
-		if ($(this).attr("id") === "clearall") {
-			newnumber = "";
-		}
-    });
-    $("#equals").click(function(){
+    $("#equals").on('click',function(){
+		var number_result;
 		if (operator === "+"){
-			number = (parseInt(number, 10) + parseInt(newnumber,10)).toString(10);
+			number_cal = parseInt(number_cal, 10) + parseInt(number_tmp,10);
+			number_result = number_cal.toString();
 		} else if (operator === "-"){
-			number = (parseInt(newnumber, 10) - parseInt(number,10)).toString(10);
+			number_cal = parseInt(number_cal, 10) - parseInt(number_tmp,10);
+			number_result = number_cal.toString();
+		}else if (operator === "*"){
+			number_cal = parseInt(number_cal, 10) * parseInt(number_tmp,10);
+			number_result = number_cal.toString();
 		} else if (operator === "/"){
-			number = (parseInt(newnumber, 10) / parseInt(number,10)).toString(10);
-		} else if (operator === "*"){
-			number = (parseInt(newnumber, 10) * parseInt(number,10)).toString(10);
+
+			var length = number_cal.length 
+			var display = length - 9; 
+			number_cal = parseInt(number_cal, 10) / parseInt(number_tmp,10);		
+			if(number_cal.toString().length - number_tmp.toString().length >= 2){
+				number_result = (Math.round(number_cal * Math.pow(10, 8)) / Math.pow(10, 8)).toString();
+				number_result = number_result.substr(0,10);
+			}else{
+				number_result = (Math.round(number_cal * Math.pow(10, 8)) / Math.pow(10, 8)).toString();
+			}
+			
+		} 
+		currentText.text(number_result);
+		number_tmp = "";
+		number_cal = "";
+    });
+    $("#clear,#allclear").click(function(){
+		number_tmp = "";
+		currentText.text("0");
+		if ($(this).attr("id") === "allclear") {
+			number_cal = "";
 		}
-		totaldiv.text(number);
-		testNumLength(number);
-		number = "";
-		newnumber = "";
     });
 });
