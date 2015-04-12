@@ -47,15 +47,12 @@
 			background-color:rgba(255,255,255,0.5);
 	    }
 
-		article p:hover{
+		/*article li:hover{
 			background-color: rgba(50,198,145,0.4);
-		}
-		article li:hover{
-			background-color: rgba(50,198,145,0.4);
-		}
+		}*/
 
 		article div:hover{
-			background-color: rgba(50,198,145,0.4);
+			background-color: rgba(243,223,203,0.3);
 		}
 		/* This code is tested with latest version of Firefox and Chrome */
 .box {
