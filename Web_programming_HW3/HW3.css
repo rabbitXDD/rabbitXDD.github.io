@@ -20,18 +20,9 @@
     	article{
     		font-size: 18px;
     	}
-    	header>strong{
-    		position: relative;
-			margin-left: 5em;
-    		font-size: 30px;
-            font-weight: bold;
-            font-family: wcl-08 ;
-            color:black;
-    	}
+    	
 		h3{
-			position: relative; 
 			color: rgb(22,1,235);
-			border-bottom:1px solid;
 			font: 1.4em/1.5 serif;
 			font-family: 正黑體;
 			font-weight: bolder;
@@ -42,19 +33,6 @@
 			  width: 90%;
 		    }
 	    
-	    img#ability{
-	    	position:absolute; 
-			  width:80%;
-			  height:80%;
-			  border-radius: 10px;
-			  /*background-color:rgba(115,194,197,0.3);*/
-		    }
-		img#proportion{
-			position:absolute; 
-			width:80%;
-			height:80%;
-			border-radius: 10px;
-		}
 		img#form{
 			position: relative;
 			width:20%;
@@ -64,11 +42,6 @@
 		    /*background-color:rgba(115,194,197,0.3);*/
 		}
 		
-	    aside {
-		      
-		      top: 1px;
-
-	    }
 	    section{
 	    	float: left;
 	    }
@@ -135,7 +108,7 @@
   box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
   border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
 }
-.box:before {
+/*.box:before {
       position: absolute;
       width: 80%;
       height: 40%;
@@ -162,4 +135,4 @@
       }
       #sidebar ul:hover>li{
       	color:blue;
-      }
+      }*/
