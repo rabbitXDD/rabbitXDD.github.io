@@ -21,8 +21,9 @@
 		background: #DE2211 ;
 }
 		nav a {
-			color: rgba(231,210,212,0.7);
-			font-size: 1.2em;
+			color: rgba(255,255,255,1);
+			font-size: 1.5em;
+		    font-family: monospace;
 			text-decoration: none;
 		}
 		#search {	
