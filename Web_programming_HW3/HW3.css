@@ -22,6 +22,7 @@
     	}
     	
 		h3{
+			border-bottom: 1px solid;
 			color: rgb(22,1,235);
 			font: 1.4em/1.5 serif;
 			font-family: 正黑體;
@@ -41,10 +42,7 @@
 	    #bottom{
 	    	padding-bottom:40px;
 	    }
-	    ol{
-	    	list-style-type: none;
-	    	counter-reset: li-counter;
-	    }
+
 	    ol>li:nth-child(odd){
 			background-color:rgba(255,255,255,0.5);
 	    }
