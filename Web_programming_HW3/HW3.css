@@ -62,7 +62,6 @@
   left: 1.05em;
   width: 400px;
   height: 300px;
-  background-color: #fff;
   box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
   border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
 }
