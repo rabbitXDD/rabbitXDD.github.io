@@ -21,7 +21,7 @@
 		background: #DE2211 ;
 }
 		nav a {
-			color: rgba(150,034,040,0.7);
+			color: rgba(231,210,212,0.7);
 			font-size: 1.2em;
 			text-decoration: none;
 		}
@@ -68,51 +68,31 @@
 		/* This code is tested with latest version of Firefox and Chrome */
 .box {
   position: relative;
-  width: 370px;
-  height: 300px;
+  width: 320px;
+  height: 270px;
   background-color: #fff;
   box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
   border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
 }
 .box:before {
-    position: absolute;
-    content: "";
-    width: 130%;
-    height: 30%;
-    border-left: 1px dashed rgba(0, 0, 0, 0.1);
-    border-right: 1px dashed rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.1);
-    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1,rgba(0, 0, 0, 0.2)));
-    background: -moz-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: -ms-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: -o-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
-    -webkit-transform: translate(44px,-10px) skew(0deg) rotate(-45deg);
-     -moz-transform: translate(44px,-10px) skew(0deg) rotate(-45deg);
-     -ms-transform: translate(44px,-10px) skew(0deg) rotate(-45deg);
-     -o-transform: translate(44px,-10px) skew(0deg) rotate(-45deg);
-     transform: translate(44px,-10px) skew(0deg) rotate(-45deg);
-    }
+      position: absolute;
+      width: 88%;
+      height: 47%;
+      left: 6%;
+      border-radius: 44%;
+      z-index: -1;
+      top: 0%;
+      content: "";
+      box-shadow: 0 -15px 28px rgba(0,0,0,0.35);
+      }
 .box:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    left: 0;
-    width: 130%;
-    height: 30%;
-    border-left: 1px dashed rgba(0, 0, 0, 0.1);
-    border-right: 1px dashed rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.1);
-    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1,rgba(0, 0, 0, 0.2)));
-    background: -moz-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: -ms-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: -o-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    background: linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
-    -webkit-transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
-     -moz-transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
-     -ms-transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
-     -o-transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
-     transform: translate(-44px,10px) skew(0deg) rotate(-45deg);
-    }
+      position: absolute;
+      width: 88%;
+      height: 47%;
+      left: 6%;
+      border-radius: 44%;
+      z-index: -1;
+      bottom: 0%;
+      content: "";
+      box-shadow: 0 15px 28px rgba(0,0,0,0.35);
+      }
