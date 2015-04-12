@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>課程申請回覆表單</title>
+    <style type="text/css">
+    	body{
+    		background-color: #CCFFCC;
+    	}
+		div{
+			height:50px;
+		    width:200px;
+		    border:#6495ED;
+		    background-color:#BCD2EE;
+		    border-radius:5px;
+		}
+    </style>
+  </head>
+  <body>
+  	<script type="text/javascript">
+  		function finish(){
+  			confirm("Thank you for applying!")
+  		}
+  	</script>
+	<h1>課程申請表</h1>
+	
+	<p>感謝你申請本課程，請依序回答以下題目，謝謝！</p>
+	<ol>
+	  	<li>
+		  	<h3>您的大名是？</h3>
+		  	<input type="text" required id="what">
+	  	</li>
+  	<li>
+  	  <h3>您的性別是？</h3>
+	  <input type="radio" name="sex" value="d0"> 男&nbsp;&nbsp;&nbsp;
+	  <input type="radio" name="sex" value="d1"> 女
+	</li>
+  	<li>
+	  	<h3>您的生日是？</h3>
+	  	<input type="date" id="birthday">
+  	</li>
+  	<li>
+	  	<h3>請問您平常的交通工具是？</h3>
+	  	<input type="checkbox"  value="d0">走路
+	  	<input type="checkbox"  value="d1">腳踏車
+	  	<input type="checkbox"  value="d2">摩托車
+	  	<input type="checkbox"  value="d3">汽車
+	  	<input type="checkbox"  value="d4">公車
+	  	<input type="checkbox"  value="d5">捷運
+	  	<input type="checkbox"  value="d6">火車
+	  	<input type="checkbox"  value="d7">飛機
+  	</li>
+   	<li>
+	  	<h3>您的最高教育程度是？</h3>
+	  	<input type="radio" name="education" value="d0">小學以下
+	  	<input type="radio" name="education" value="d1">國中
+	  	<input type="radio" name="education" value="d2">高中
+	  	<input type="radio" name="education" value="d3">大學
+	  	<input type="radio" name="education" value="d4">碩士
+	  	<input type="radio" name="education" value="d5">博士
+	  	<input type="radio" name="education" value="d6">其他
+	  	<input type="text">
+  	</li>
+  	<li>
+	  	<h3>您感興趣的領域是？</h3>
+	  	<p>請輸入或從下拉式選單中選擇</p>
+  		<input type="text">
+    			<select name="career">
+  				<option>會計</option>
+  				<option>寫作&編輯</option>
+  				<option>動畫</option>
+  				<option>攝影</option>
+  				<option>圖形設計</option>
+  				<option>電腦軟體</option>
+  				<option>電腦遊戲</option>
+  				<option>資訊科技服務</option>
+  			</select>
+  		</form>
+  	</li>
+  	<li>
+  		<h3>您的電話號碼是？</h3>
+  		<input type="tel" name="number">
+  	</li>
+  	<li>
+  		<h3>您的電子郵件地址是？</h3>
+  		<input type="email" name="mail">
+  	</li>
+  	<li>
+  		<h3>您的個人網站網址是？</h3>
+  		<input type="eurl" name="website">
+  	</li>
+	</ol>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	<button  type="button" onclick="finish()" id="submit" style="color:blue;font-family:Garamond;font-size:18px;text-align:center"><strong>Submit</strong></button>
+	<br><br>
+	<div>
+    	<a style="color:blue;font-family:Garamond;font-size:22px" href="http://rabbitxdd.github.io/web-programming_HW1.html">Back to <strong>Course Page</strong></a>
+    </div>
+
+  </body>
+</html>
