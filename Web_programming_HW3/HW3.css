@@ -35,7 +35,7 @@
     	
 		h3{
 			border-bottom: 1px solid;
-			color: rgb(22,1,235);
+			font-color: rgb(22,1,235);
 			font: 1.4em/1.5 serif;
 			font-family: 正黑體;
 			font-weight: bolder;
@@ -65,6 +65,10 @@
 
 		article div:hover{
 			background-color: rgba(243,223,203,0.3);
+		}
+
+		ul.non_style{
+			list-style-type: none;
 		}
 		/* This code is tested with latest version of Firefox and Chrome */
 .box {
