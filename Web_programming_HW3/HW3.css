@@ -49,7 +49,9 @@
 			left: 6em;
 		    /*background-color:rgba(115,194,197,0.3);*/
 		}
-		
+		div#core{
+			padding-top: 1.5em;
+		}
 
 	    #bottom{
 	    	padding-bottom:40px;
