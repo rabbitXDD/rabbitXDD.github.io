@@ -1,0 +1,114 @@
+.sun_intro {
+  font-size: 25px; 
+  top: -35px;
+  left: 810px;
+  width: 510px;
+  height: 225px;
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: #000;
+  border-radius: 10px;
+background: -moz-linear-gradient(top,  rgba(134,179,249,0.47) 2%, rgba(90,149,243,0.47) 25%, rgba(84,145,242,0.48) 28%, rgba(81,140,240,0.58) 69%, rgba(79,137,239,0.88) 91%, rgba(18,114,232,0.79) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,rgba(134,179,249,0.47)), color-stop(25%,rgba(90,149,243,0.47)), color-stop(28%,rgba(84,145,242,0.48)), color-stop(69%,rgba(81,140,240,0.58)), color-stop(91%,rgba(79,137,239,0.88)), color-stop(100%,rgba(18,114,232,0.79))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(134,179,249,0.47) 2%,rgba(90,149,243,0.47) 25%,rgba(84,145,242,0.48) 28%,rgba(81,140,240,0.58) 69%,rgba(79,137,239,0.88) 91%,rgba(18,114,232,0.79) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(134,179,249,0.47) 2%,rgba(90,149,243,0.47) 25%,rgba(84,145,242,0.48) 28%,rgba(81,140,240,0.58) 69%,rgba(79,137,239,0.88) 91%,rgba(18,114,232,0.79) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(134,179,249,0.47) 2%,rgba(90,149,243,0.47) 25%,rgba(84,145,242,0.48) 28%,rgba(81,140,240,0.58) 69%,rgba(79,137,239,0.88) 91%,rgba(18,114,232,0.79) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(134,179,249,0.47) 2%,rgba(90,149,243,0.47) 25%,rgba(84,145,242,0.48) 28%,rgba(81,140,240,0.58) 69%,rgba(79,137,239,0.88) 91%,rgba(18,114,232,0.79) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7886b3f9', endColorstr='#c91272e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+div#main{
+	position: absolute;
+	top: 1700px;
+	left: 40%
+}
+#season_intro{
+	position: absolute;
+	font-family: 'Josefin Sans', sans-serif;
+	top: 1650px;
+	right: 5%;
+	width: 500px;
+	height: 700px;
+	background-color: rgba(189,193,216,0.2);
+
+	border-radius: 10px;
+	padding: 5px;
+}
+#season_head1{
+	font-size: 50px;
+	color: #21AB38;
+}
+#season_head{
+	font-size: 90px;
+	color: white;
+	text-align: left;
+	color: #21AB38;
+}
+#season_content{
+	font-size: 25px;
+	color: white;
+margin-left: 40px;
+  margin-right: 20px;
+	text-align: left;
+}
+#sun_season{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 135px;
+	left: -250px;
+}
+
+div #north,div #west,div #south,div #east{
+    margin-top: -100px;
+    margin-left: -650px;
+}
+
+div #north{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	top:20px;
+	left: 380px;
+	right:400px;
+	
+}
+div #west{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	top:220px;
+	left: 130px;
+	
+}
+div #south{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	top:450px;
+	left: 380px;
+	right:400px;
+	
+}
+div #east{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	top:220px;
+	left: 630px;
+	
+}
+#sun_season{
+	opacity: 1;
+}
+div#main img{
+	opacity: 0.65;
+}
+/*pointer*/
+
+.pointer {
+   cursor: pointer; 
+}
