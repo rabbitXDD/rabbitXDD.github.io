@@ -546,6 +546,11 @@ footer{
   margin-top: 5px;
 
 }
+.fb-like{
+  position: absolute;
+  top:-2px;
+  left: 900px;
+}
 
 .footBar ul li {
     display: inline;
