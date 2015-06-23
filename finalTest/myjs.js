@@ -380,4 +380,30 @@ c.closePath();
     $("#east").mouseenter(function(){
         $("#season_content").html("冬至"+"<br/>"+"<br/>"+"日期：每年12 / 22日前後"+"<br/>"+"<br/>"+"太陽照射：直射南回歸線（南緯23.5度），斜射北半球"+"<br/>"+"<br/>"+"季節：北半球冬季，南半球夏季"+"<br/>"+"<br/>"+"特色：南半球當日白晝全年最長，南極圈周圍太陽整日不落。"+"<br/>"+"<br/>"+"相關節慶：冬至");
     });
+
+//
+	$('#sunmoon_1').mouseenter(function(){
+		$(this).addClass('pointer');
+	});
+	$('#sunmoon_1').mouseleave(function(){
+		$(this).removeClass('pointer');
+	});
+	$('#sunmoon_2').mouseenter(function(){
+		$(this).addClass('pointer');
+	});
+	$('#sunmoon_2').mouseleave(function(){
+		$(this).removeClass('pointer');
+	});
+	$('#sunmoon_3').mouseenter(function(){
+		$(this).addClass('pointer');
+	});
+	$('#sunmoon_3').mouseleave(function(){
+		$(this).removeClass('pointer');
+	});
+	$('#sunmoon_4').mouseenter(function(){
+		$(this).addClass('pointer');
+	});
+	$('#sunmoon_4').mouseleave(function(){
+		$(this).removeClass('pointer');
+	});
 });
