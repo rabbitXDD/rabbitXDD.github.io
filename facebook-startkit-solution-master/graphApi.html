@@ -39,9 +39,8 @@
         // Initialize Parse
         Parse.initialize("hwpYesxKT8pQwHE0e0QLlqIa7jIJy80eU5EPhn7G", "5EMDynqBfJc8ONN6ywN6WvvkuNrCSA2ZBE19LqKX");
 
-
         window.fbAsyncInit = function() {
-    FB.init({
+      Parse.FacebookUtils.init({
       appId      : '1652401031642744',
 	  status : true, // check Facebook Login status
 	  cookie : true, // enable cookies to allow Parse to access the session
