@@ -1,4 +1,5 @@
 .sun_intro {
+  font-family:  cwtexqfangsong;
   font-size: 25px; 
   top: -35px;
   left: 750px;
@@ -10,6 +11,9 @@
   color: rgba(239, 225, 205,1);
   border-radius: 10px;
 background-color: rgba(207, 166, 104,0.4);
+}
+.sun_button{
+	font-family:  cwtexqfangsong;
 }
 
 .sunmoon_intro {
