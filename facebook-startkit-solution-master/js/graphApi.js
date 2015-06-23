@@ -45,7 +45,7 @@ $(document).ready(function(){
 		    
 		            $("#comments").append(
 		              "<blockquote>"+
-		                comment.get("targetUser").get("username") + ": " +comment.get("message")+
+		                response['first_name'] + ": " +comment.get("message")+
 		                // "<br><img src='"+ comment.get("img").url()+"' height='100px'>"+  // Practice 6
 		              "</blockquote>");
 		          }
