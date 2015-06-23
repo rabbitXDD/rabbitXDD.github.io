@@ -1,4 +1,6 @@
+Parse.initialize("Avp2LWPc7XR8vau5shMlzGx6RZD3iyCJMz2CPvPO", "Ajfie2Q3dh4CUnEtbrLwBttD1YvVlDHPiAcBC75w");
 $(document).ready(function(){
+	
 	var current = Parse.User.current();
 	console.log(current);
 	if(current){
@@ -20,6 +22,79 @@ $(document).ready(function(){
 		     });   
 	    },3000);
 		indexView();
+
+
+		console.log(Parse.User.current());
+      if (Parse.User.current()){
+        $("#name").text(Parse.User.current().get("username"));
+      }
+      
+
+      // Practice 2  這裏要補充兩行不見的程式碼
+       var Comment = Parse.Object.extend("Comment") ;
+       var queryComments = new Parse.Query (Comment) ;
+
+      // Practice 3  要將關聯的資料也一起抓下來
+      queryComments.include("targetUser") ; // 在 query 時必須要 include 該欄位，才會抓取該欄位的資料
+      // Practice 4  只顯示目前使用者的留言
+    
+      // Practice 6  只抓取有圖片的留言
+      //queryComments.exists("img");
+      queryComments.find({
+        success : function(arrayOfQueriedObjects){
+          console.log (arrayOfQueriedObjects);
+    
+          for (var i = 0 ; i < arrayOfQueriedObjects.length ; i++){
+            comment = arrayOfQueriedObjects[i] ;
+    
+            $("#comments").append(
+              "<blockquote>"+
+                comment.get("targetUser").get("username") + ": " +comment.get("message")+
+                // "<br><img src='"+ comment.get("img").url()+"' height='100px'>"+  // Practice 6
+              "</blockquote>");
+          }
+        },
+        error : function(errorObject){
+          alert(errorObject.message) ;
+        }
+      });
+    });
+
+    $(document).on('submit','#commentForm',function(eventObject){
+      eventObject.preventDefault();
+
+      var Comment = Parse.Object.extend("Comment") ;
+      var comment = new Comment();
+
+      comment.set("message",$("#comment").val());
+      // Practice 1 記錄發文的使用者
+      comment.set("targetUser", Parse.User.current()) ;
+      // Practice 5 儲存圖片
+      if ($("#fileInput")[0].files.length > 0) {
+       var file = $("#fileInput")[0].files[0];
+       var name = "photo";
+       var parseImg = new Parse.File(name, file);
+       comment.set("img",parseImg);
+       parseImg.save({
+       success : function (savedImg){
+       alert(savedImg.url());
+       },
+       error : function (saveingImg , errorObject){
+       alert(errorObject.message) ;
+       }
+       });
+      }
+      comment.save({
+        success : function(savedParseObject){
+          alert("留言成功");
+          window.location.reload();
+        },
+        error : function (errorObject){
+          console.log(errorObject);
+          alert(errorObject.message);
+        }
+      });
+    });
 	}
 	else{
 		loginView();
@@ -45,6 +120,7 @@ $(document).on('click','#logoutBtn',function(e){
 function loginView(){
 	$('#logoutBtn').hide();
 	$('#indexView').hide();
+	$('#container').hide();
 	
 	$('#loginView').show();
 	$('.notLogin').show();
@@ -57,6 +133,7 @@ function indexView(){
 	$('.notLogin').hide();
 	
 	$('#indexView').show();
+	$('#container').show();
 	$('#logoutBtn').show();
 	$('body').css("background-image","url(img/index.jpg)");
 	

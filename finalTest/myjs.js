@@ -71,6 +71,10 @@ $(document).ready(function(){
             .animate({opacity:1});  
     	})
 	});
+$('#north').click(function(){
+	$('#myModal').modal();
+
+	});
 //sun pointer
 	$('.sun_button div').mouseenter(function(){
 		$(this).addClass('pointer');
