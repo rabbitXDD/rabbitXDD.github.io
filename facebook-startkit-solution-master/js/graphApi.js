@@ -1,6 +1,4 @@
-Parse.initialize("Avp2LWPc7XR8vau5shMlzGx6RZD3iyCJMz2CPvPO", "Ajfie2Q3dh4CUnEtbrLwBttD1YvVlDHPiAcBC75w");
 $(document).ready(function(){
-	
 	var current = Parse.User.current();
 	console.log(current);
 	if(current){
@@ -22,45 +20,48 @@ $(document).ready(function(){
 		     });   
 	    },3000);
 		indexView();
-
-
 		console.log(Parse.User.current());
-      if (Parse.User.current()){
-        $("#name").text(Parse.User.current().get("username"));
-      }
-      
+		      if (Parse.User.current()){
+		        $("#name").text(Parse.User.current().get("username"));
+		      }
+		      
 
-      // Practice 2  這裏要補充兩行不見的程式碼
-       var Comment = Parse.Object.extend("Comment") ;
-       var queryComments = new Parse.Query (Comment) ;
+		      // Practice 2  這裏要補充兩行不見的程式碼
+		       var Comment = Parse.Object.extend("Comment") ;
+		       var queryComments = new Parse.Query (Comment) ;
 
-      // Practice 3  要將關聯的資料也一起抓下來
-      queryComments.include("targetUser") ; // 在 query 時必須要 include 該欄位，才會抓取該欄位的資料
-      // Practice 4  只顯示目前使用者的留言
-    
-      // Practice 6  只抓取有圖片的留言
-      //queryComments.exists("img");
-      queryComments.find({
-        success : function(arrayOfQueriedObjects){
-          console.log (arrayOfQueriedObjects);
-    
-          for (var i = 0 ; i < arrayOfQueriedObjects.length ; i++){
-            comment = arrayOfQueriedObjects[i] ;
-    
-            $("#comments").append(
-              "<blockquote>"+
-                comment.get("targetUser").get("username") + ": " +comment.get("message")+
-                // "<br><img src='"+ comment.get("img").url()+"' height='100px'>"+  // Practice 6
-              "</blockquote>");
-          }
-        },
-        error : function(errorObject){
-          alert(errorObject.message) ;
-        }
-      });
-    });
+		      // Practice 3  要將關聯的資料也一起抓下來
+		      queryComments.include("targetUser") ; // 在 query 時必須要 include 該欄位，才會抓取該欄位的資料
+		      // Practice 4  只顯示目前使用者的留言
+		    
+		      // Practice 6  只抓取有圖片的留言
+		      //queryComments.exists("img");
+		      queryComments.find({
+		        success : function(arrayOfQueriedObjects){
+		          console.log (arrayOfQueriedObjects);
+		    
+		          for (var i = 0 ; i < arrayOfQueriedObjects.length ; i++){
+		            comment = arrayOfQueriedObjects[i] ;
+		    
+		            $("#comments").append(
+		              "<blockquote>"+
+		                comment.get("targetUser").get("username") + ": " +comment.get("message")+
+		                // "<br><img src='"+ comment.get("img").url()+"' height='100px'>"+  // Practice 6
+		              "</blockquote>");
+		          }
+		        },
+		        error : function(errorObject){
+		          alert(errorObject.message) ;
+		        }
+		      });
 
-    $(document).on('submit','#commentForm',function(eventObject){
+	}
+	else{
+		loginView();
+	}
+});
+
+$(document).on('submit','#commentForm',function(eventObject){
       eventObject.preventDefault();
 
       var Comment = Parse.Object.extend("Comment") ;
@@ -95,11 +96,6 @@ $(document).ready(function(){
         }
       });
     });
-	}
-	else{
-		loginView();
-	}
-});
 
 $(document).on('click','#loginBtn',function(e){
 	e.preventDefault();
