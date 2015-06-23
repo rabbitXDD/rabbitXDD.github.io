@@ -37,7 +37,12 @@
 		//step1:https://www.parse.com/docs/js/guide#users-facebook-users
 		
         // Initialize Parse
-        Parse.initialize("Avp2LWPc7XR8vau5shMlzGx6RZD3iyCJMz2CPvPO", "Ajfie2Q3dh4CUnEtbrLwBttD1YvVlDHPiAcBC75w");
+        Parse.initialize("hwpYesxKT8pQwHE0e0QLlqIa7jIJy80eU5EPhn7G", "5EMDynqBfJc8ONN6ywN6WvvkuNrCSA2ZBE19LqKX");
+        var TestObject = Parse.Object.extend("TestObject");
+var testObject = new TestObject();
+testObject.save({foo: "bar"}).then(function(object) {
+  alert("yay! it worked");
+});
 
         window.fbAsyncInit = function() {
         Parse.FacebookUtils.init({ // this line replaces FB.init({
