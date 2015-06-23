@@ -40,14 +40,11 @@ $(document).ready(function(){
 		          for (var i = 0 ; i < arrayOfQueriedObjects.length ; i++){
 		            comment = arrayOfQueriedObjects[i] ;
 		    	
-		    	FB.api('/me', function (response) {
-						$("#comments").append(
+		            $("#comments").append(
 		              "<blockquote>"+
-		                response['first_name'] + ": " +comment.get("message")+
+		                $("#name").text() + ": " +comment.get("message")+
 		                // "<br><img src='"+ comment.get("img").url()+"' height='100px'>"+  // Practice 6
 		              "</blockquote>");
-			         });
-		            
 		          }
 		        },
 		        error : function(errorObject){
