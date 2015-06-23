@@ -14,12 +14,11 @@ $(document).ready(function(){
 				 
 			         FB.api('/me', function (response) {
 						 console.log(response);
-						 $('#fbImgView').append("<h1>Welcome , "+(response['gender']=="male"?"Mr. ":"Miss ")+" "+response['first_name']+"</h1>");
+						$('#fbImgView').append("<h1>Welcome , "+(response['gender']=="male"?"Mr. ":"Miss ")+" "+response['first_name']+"</h1>");
+						$("#name").text(response['first_name']);
 			         });
+			         	
 
-			         if (Parse.User.current()){
-				        $("#name").text(response['first_name']);
-				     }
 
 				     console.log(Parse.User.current());
 
@@ -40,12 +39,15 @@ $(document).ready(function(){
 		    
 		          for (var i = 0 ; i < arrayOfQueriedObjects.length ; i++){
 		            comment = arrayOfQueriedObjects[i] ;
-		    
-		            $("#comments").append(
+		    	
+		    	FB.api('/me', function (response) {
+						$("#comments").append(
 		              "<blockquote>"+
 		                response['first_name'] + ": " +comment.get("message")+
 		                // "<br><img src='"+ comment.get("img").url()+"' height='100px'>"+  // Practice 6
 		              "</blockquote>");
+			         });
+		            
 		          }
 		        },
 		        error : function(errorObject){
