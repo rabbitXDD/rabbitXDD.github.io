@@ -6,9 +6,7 @@ $(document).ready(function(){
 			FB.getLoginStatus(function(response) {
 			     if (response.status === 'connected') {
 			         uid = response.authResponse.userID;
-			         if (Parse.User.current()){
-				        $("#name").text(response['first_name']);
-				     }
+			         
 			         accessToken = response.authResponse.accessToken;
 			         FB.api('/me/picture?type=large', function (response) {
 					    $('#fbImgView').html("<h5>Here are your profile photo</h5><img src="+response.data.url+" crossorigin=\"anonymous\" id=preview1 />");          
@@ -18,12 +16,12 @@ $(document).ready(function(){
 						 console.log(response);
 						 $('#fbImgView').append("<h1>Welcome , "+(response['gender']=="male"?"Mr. ":"Miss ")+" "+response['first_name']+"</h1>");
 			         });
-					 
-			  }
-		     });   
-	    },3000);
-		indexView();
-		console.log(Parse.User.current());
+
+			         if (Parse.User.current()){
+				        $("#name").text(response['first_name']);
+				     }
+
+				     console.log(Parse.User.current());
 
 
 		      // Practice 2  這裏要補充兩行不見的程式碼
@@ -54,6 +52,12 @@ $(document).ready(function(){
 		          alert(errorObject.message) ;
 		        }
 		      });
+					 
+			  }
+		     });   
+	    },3000);
+		indexView();
+		
 
 	}
 	else{
