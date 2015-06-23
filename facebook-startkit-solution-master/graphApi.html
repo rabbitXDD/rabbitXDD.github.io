@@ -38,30 +38,23 @@
 		
         // Initialize Parse
         Parse.initialize("hwpYesxKT8pQwHE0e0QLlqIa7jIJy80eU5EPhn7G", "5EMDynqBfJc8ONN6ywN6WvvkuNrCSA2ZBE19LqKX");
-        var TestObject = Parse.Object.extend("TestObject");
-var testObject = new TestObject();
-testObject.save({foo: "bar"}).then(function(object) {
-  alert("yay! it worked");
-});
+        
 
         window.fbAsyncInit = function() {
-        Parse.FacebookUtils.init({ // this line replaces FB.init({
-           appId      : '1616729421906225', // Facebook App ID
-           status     : true,  // check Facebook Login status
-           cookie     : true,  // enable cookies to allow Parse to access the session
-           xfbml      : true,  // initialize Facebook social plugins on the page
-           version    : 'v2.3' // point to the latest Facebook Graph API version
-        });
-          // Run code after the Facebook SDK is loaded.
-        };
+    FB.init({
+      appId      : '1652401031642744',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
 
-        (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 
 		function fblogin(){
 		    //step2:https://developers.facebook.com/docs/graph-api/using-graph-api/v2.3	
