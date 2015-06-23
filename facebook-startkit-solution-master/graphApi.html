@@ -38,13 +38,15 @@
 		
         // Initialize Parse
         Parse.initialize("hwpYesxKT8pQwHE0e0QLlqIa7jIJy80eU5EPhn7G", "5EMDynqBfJc8ONN6ywN6WvvkuNrCSA2ZBE19LqKX");
-        
+
 
         window.fbAsyncInit = function() {
     FB.init({
       appId      : '1652401031642744',
-      xfbml      : true,
-      version    : 'v2.3'
+	  status : true, // check Facebook Login status
+	  cookie : true, // enable cookies to allow Parse to access the session
+	  xfbml : true, // initialize Facebook social plugins on the page
+	  version : 'v2.3' // point to the latest Facebook Graph API version
     });
   };
 
