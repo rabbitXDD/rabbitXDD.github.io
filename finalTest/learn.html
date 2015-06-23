@@ -17,6 +17,12 @@
   <script src="myjs.js"></script>
   <link href="learnlayout.css" rel="stylesheet" type="text/css" />
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+ 
+<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+
   <script src="drag.js"></script>
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -27,10 +33,11 @@
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="myjs.js"></script>
-  
+  <script src="loading.js"></script>
   <script src="jquery.bpopup.min.js"></script>
+  <link rel="stylesheet" href="hint.css">
 
-  <link href='//fonts.googleapis.com/css?family=Asap:700' rel='stylesheet' type='text/css'><script type="text/javascript">var _jf = _jf || [];_jf.push(['p','32115']);_jf.push(['_setFont','wt014','css','.wt014']);_jf.push(['_setFont','wt014','alias','wt014']);_jf.push(['_setFont','wt014','english','Asap']);_jf.push(['_setFont','wt014','weight',800]);_jf.push(['_setFont','wcl-07','css','.wcl-07']);_jf.push(['_setFont','wcl-07','alias','wcl-07']);_jf.push(['_setFont','wcl-07','weight',700]);(function(f,q,c,h,e,i,r,d){var k=f._jf;if(k.constructor===Object){return}var l,t=q.getElementsByTagName("html")[0],a=function(u){for(var v in k){if(k[v][0]==u){if(false===k[v][1].call(k)){break}}}},j=/\S+/g,o=/[\t\r\n\f]/g,b=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,g="".trim,s=g&&!g.call("\uFEFF\xA0")?function(u){return u==null?"":g.call(u)}:function(u){return u==null?"":(u+"").replace(b,"")},m=function(y){var w,z,v,u,x=typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):" ";if(z){u=0;while((v=w[u++])){if(z.indexOf(" "+v+" ")<0){z+=v+" "}}t[c]=s(z)}}},p=function(y){var w,z,v,u,x=arguments.length===0||typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):"";if(z){u=0;while((v=w[u++])){while(z.indexOf(" "+v+" ")>=0){z=z.replace(" "+v+" "," ")}}t[c]=y?s(z):""}}},n;k.push(["_eventActived",function(){p(h);m(e)}]);k.push(["_eventInactived",function(){p(h);m(i)}]);k.addScript=n=function(u,A,w,C,E,B){E=E||function(){};B=B||function(){};var x=q.createElement("script"),z=q.getElementsByTagName("script")[0],v,y=false,D=function(){x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;a("_eventInactived");B()};if(C){v=setTimeout(function(){D()},C)}x.type=A||"text/javascript";x.async=w;x.onload=x.onreadystatechange=function(G,F){if(!y&&(!x.readyState||/loaded|complete/.test(x.readyState))){y=true;if(C){clearTimeout(v)}x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;if(!F){setTimeout(function(){E()},200)}}};x.onerror=function(H,G,F){if(C){clearTimeout(v)}D();return true};x.src=u;z.parentNode.insertBefore(x,z)};a("_eventPreload");m(h);n(r,"text/javascript",false,3000)})(this,this.document,"className","jf-loading","jf-active","jf-inactive","//ds.justfont.com/js/stable/v/4.9.4/id/146322456113");</script>
+
 
 </head>
 <body>
@@ -39,11 +46,11 @@
         <nav class="navBar">
   	<ul>
   	<li><a href= #page-container>OuterSpacing</a></li>
-  	<li><a href= #sunIntro>太陽</a></li>
-  	<li><a href= #season>四季</a></li>
-  	<li><a href= #moonIntro>月亮</a></li>
-  	<li><a href= #moonevent>陰晴圓缺</a></li>
-  	<li><a href= #sunmoonevent>日月蝕</a></li>
+  	<li id="navsun"><a href= #sunIntro>太陽</a></li>
+  	<li id="navseason"><a href= #season>四季</a></li>
+  	<li id="navmoon"><a href= #moonIntro>月亮</a></li>
+  	<li id="navmoonevent"><a href= #moonevent>月盈虧</a></li>
+  	<li id="navsunmoon"><a href= #sunmoonevent>日月蝕</a></li>
     </ul>
     
         </nav>
@@ -68,14 +75,16 @@
   	  
     </header>
 
-    <section id="sunIntro">
+    <section id="sunIntro"><a href= #season>
+      <div id="next1" ><img id="nexti1" src="image/next.png" alt="next" height="80" width="120" href= #season></div></a>
+
       <img id="Introimg" src="image/sun_all.png" alt="earth" height="420" width="445">
 
       <div id="sun_Intro"><p>&nbsp;&nbsp;1<span id="sun_Title">&nbsp;&nbsp;太陽</span></p>
       <div id="sun_Content"> 
         <p class="wcl-07">
           太陽是位於太陽系中心的恆星，質量四分之三是氫，剩下幾乎都是氦氣。它的能量主要來自內部氫融合成氦的核融合反應。<br>
-      絕對星等為 +4.<br>83，光線為白色，但地表觀測時因大氣層折射，呈現黃色，為地球上觀測上最亮的星體，視星等為 -26.74。<br>
+      絕對星等為 +4.83，光線為白色，但地表觀測時因大氣層折射，呈現黃色，為地球上觀測上最亮的星體，視星等為 -26.74。<br>
       與地球距離約1.496×10 公里，光速約8分19秒。<br>
       主要構成（由內自外）：<br>
         </p>
@@ -83,41 +92,116 @@
       </div>
       </div>
       <div class="sun_button">
-        <div id="sun_1" title="點我查看更多！"><div id="sun_">內核</div></div>
-        <div id="sun_2" title="點我查看更多！"><div id="sun_">輻射層</div></div>
-        <div id="sun_3" title="點我查看更多！"><div id="sun_">對流層</div></div>
-        <div id="sun_4" title="點我查看更多！"><div id="sun_">大氣層</div></div>
+        <div id="sun_1" class="hint--bottom hint--success hint--rounded" data-hint="點擊查看詳細內容"><div id="sun_">內核</div></div>
+        <div id="sun_2" class="hint--bottom hint--success hint--rounded" data-hint="點擊查看詳細內容"><div id="sun_">輻射層</div></div>
+        <div id="sun_3" class="hint--bottom hint--success hint--rounded" data-hint="點擊查看詳細內容"><div id="sun_">對流層</div></div>
+        <div id="sun_4" class="hint--bottom hint--success hint--rounded" data-hint="點擊查看詳細內容"><div id="sun_">光球</div></div>
       </div>
       
-      <div class="sun_intro"><span>移動到按鈕上查看更多關於太陽的介紹吧！</span></div>
+      <div class="sun_intro"><span>點擊按鈕查看更多關於太陽的介紹吧！</span></div>
     </section>
 
     <section id="season">
-
+      <a href= #moonIntro>
+    <div id="next2"><img id="nexti2" src="image/next.png" alt="next" height="80" width="120"></div></a>
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="myModal1" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
-        <div class="modal-header" style="padding:35px 50px;">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4><span class="glyphicon glyphicon-info-sign"></span> 我是標題</h4>
-        </div>
-        <div class="modal-body" style="padding:40px 50px;">
-          我是內文
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> 離開</button>
+        
+        <div id="foot1" class="modal-footer">
+          <button type="submit" id= "button1" class="btn btn-success btn-default pull-bottom" data-dismiss="modal"><span ></span> SKIP</button>
 
         </div>
       </div>
       
     </div>
   </div> 
+
+    <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div id="foot2"  class="modal-footer">
+          <button type="submit" id= "button1" class="btn btn-success btn-default pull-bottom" data-dismiss="modal"><span ></span> SKIP</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+      <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div id="foot3"  class="modal-footer">
+          <button type="submit" id= "button1" class="btn btn-success btn-default pull-bottom" data-dismiss="modal"><span ></span> SKIP</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+      <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div id="foot4"  class="modal-footer">
+          <button type="submit" id= "button1" class="btn btn-success btn-default pull-bottom" data-dismiss="modal"><span ></span> SKIP</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+      <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div id="foot5"  class="modal-footer">
+          <button type="submit" id= "button1" class="btn btn-success btn-default pull-bottom" data-dismiss="modal"><span ></span> SKIP</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div id="foot6"  class="modal-footer">
+          <button type="submit" id= "button1" class="btn btn-warning btn-default pull-bottom" data-dismiss="modal"><span ></span> 前往留言</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
  <div id="season_intro">
     <p id="season_head">&nbsp;&nbsp;2 <span id="season_head1">四季</span></p>
-    <p id="season_content">季節是每年循環出現的地理景觀相差比較大的幾個時間段。不同的地區，其季節的劃分也是不同的。<br>對溫帶地區而言，一年分為四季，即春季、夏季、秋季、冬季；在這些季節裡又分為四季，即溫季、熱季、涼季、寒季；而對於赤道地區只有旱季和雨季，或無季相之分。<br>在兩極地區，並非只有冬季，但春秋季不明顯，以北極為例，五月到九月為夏季，十月到隔年四月為冬季。<br></p>
+    <p id="season_content">季節主要分春、夏、秋、冬，南北半球有季節互相對調的差異，兩極主要呈現夏、冬季，春秋季不明顯。
+<br>
+成因：<br>
+是地球的自轉軸與其公轉軌道平面(黃道面)不垂直，與公轉軌道平面的垂直線形成夾角23度26分的傾斜。<br>隨著地球繞行太陽公轉不同季節直射不同區塊，而使地球不同地區有不同的溫度感受，產生四季的更迭。<br></p>
 
   </div>
 
@@ -132,23 +216,27 @@
     </section>
 
     <section id="moonIntro">
-      
+      <a href= #moonevent>
+      <div id="next3"><img id="nexti3" src="image/next.png" alt="next" height="80" width="120"></div></a>
       <img id="astroimg" src="image/太空人.png" alt="astro" height="260" width="200">
       <img id="moonimg" src="image/ww.png" alt="moon" height="500" width="478">
       <div id="moon_Intro"><p>&nbsp;&nbsp;3<span id="sun_Title">&nbsp;&nbsp;月亮</span></p>
       <div id="moon_Content"> 
-      月球，是地球唯一的天然衛星，也太陽系中第五大的衛星，直徑是地球的1/4，質量是地球的1/81。
-它的表面非常黑暗，但它仍是天空中除了太陽之外最亮的天體。<br>
-月球是第一個人類曾經登陸過的地外星球—1959年，美國NASA的阿波羅計畫是到目前為止「唯一實現的」載人登月任務。<br>
-而月球表面布滿了無數個坑洞，科學家根據從月球帶回的岩石作檢驗，推測月球在45億~~38億年前，曾受到許多巨大隕石的撞擊，因此在月球表面上留下了無數的隕石坑。另外有些坑洞則是火山爆發所造成的。<br>
+      月球，是地球唯一的天然衛星，也太陽系中第五大的衛星，直徑是地球的1/4，質量是地球的1/81。<br> <br> 它的表面非常黑暗，但由於反射太陽光，從地球觀測仍是太陽之外最亮的星球。<br><br> 
+
+月球是第一個人類曾經登陸過的地外星球—1959年，美國NASA的阿波羅計畫是到目前為止「唯一實現的」載人登月任務。<br><br> 
+
+而月球表面布滿了無數個坑洞，經推測月球在45億~~38億年前，曾受到許多巨大隕石的撞擊，因此在月球表面上留下了無數的隕石坑。另外有些坑洞則是火山爆發所造成的。<br><br> 
       </div>
       </div>
     </section>
     
     <section id="moonevent">
-    test
-    <div id="moonevent_Intro">4 陰晴圓缺</div>
-    <img id="moonResult" src="image/moon8.png" alt="earth" height="170" width="170">
+      <a href= #sunmoonevent>
+    <div id="next4"><img id="nexti4" src="image/next.png" alt="next" height="80" width="120"></div></a>
+    <div id="moonevent_Intro"><p>4 <span id="event_Title">月盈虧</span></p><br><br><br><br><br><br><br>月球繞地球公轉時，始終有一面受太陽照射，另一面黑暗。我們看到的圓缺變化其實是從地球望向月球時，同時看到包含太陽照射的亮面和月球自身的陰影所共同組合而成。</div>
+    
+    <img id="moonResult" src="image/moon8.png"  alt="earth" height="170" width="170">
     <div id="mResult">朔月</div>
     <div id="dateResult">初<br>一</div>
     <div id="day7">初一</div>
@@ -163,31 +251,53 @@
     <img id="earth" src="image/Earth.png" alt="earth" height="200" width="200">
     <img id="sun" src="image/sun.png" alt="earth" height="500" width="500">
     
-    <div id="Box1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+    <div id="Box1" class="hint--bottom hint--success hint--rounded" data-hint="將月球拖曳進來看結果！" ondrop="Drop(event)" ondragover="AllowDrop(event)">
     
     </div>
     
-    <div id="Box2" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-    <div id="Box3" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-    <div id="Box4" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-    <div id="Box5" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-    <div id="Box6" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-    <div id="Box7" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-<img id="Img2" src="image/moondrag.png" height="80" width="80" draggable="true" ondragstart="Drag(event)">
+    <div id="Box2" class="hint--bottom hint--success hint--rounded" data-hint="將月球拖曳進來看結果！"ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <div id="Box3" class="hint--bottom hint--success hint--rounded" data-hint="將月球拖曳進來看結果！"ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <div id="Box4" class="hint--bottom hint--success hint--rounded" data-hint="將月球拖曳進來看結果！"ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <div id="Box5" class="hint--bottom hint--success hint--rounded" data-hint="將月球拖曳進來看結果！"ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <div id="Box6" class="hint--bottom hint--success hint--rounded" data-hint="將月球拖曳進來看結果！"ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <div id="Box7" class="hint--bottom hint--success hint--rounded" data-hint="將月球拖曳進來看結果！"ondrop="Drop(event)" ondragover="AllowDrop(event)">
+<img id="Img2" src="image/moondrag.png"  height="80" width="80" draggable="true" ondragstart="Drag(event)">
     </div>
-    <div id="Box8" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <div id="Box8" class="hint--bottom hint--success hint--rounded" data-hint="將月球拖曳進來看結果！"ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
     <div style="clear:both;"></div>
     </section>
     
     
 
     <section id="sunmoonevent">
+      <a href= #page-container>
+      <div id="next5"><img id="nexti5" src="image/next.png" alt="next" height="80" width="120"></div></a>
+      <canvas id="paper" width="900" height="400"></canvas>
+      <div class="sunmoon_intro"><span>點擊按鈕查看更多關於日月蝕的介紹吧！</span></div>
+      <img id="sunmoonResult"  alt="" height="300" width="300">
+
+      <img id="earth2" src="image/Earth.png" alt="earth" height="150" width="150">
+      <img id="sun2" src="image/sun.png" alt="earth" height="350" width="350">
+      <img id="moon2" src="image/ww.png" alt="moon" height="80" width="70">
+      <img id="moon3" src="image/ww.png" alt="moon" height="80" width="70">
+      <img id="moon4" src="image/ww.png" alt="moon" height="80" width="70">
+      <img id="moon5" src="image/ww.png" alt="moon" height="80" width="70">
+      <div id="sunmoon_Intro"><p>&nbsp;&nbsp;5<span id="sun_Title">&nbsp;&nbsp;日月蝕</span></p>
+      <div id="sunmoon_Content"> 
+      日蝕、月蝕是就地球上的觀測者而言，看到月亮或太陽有被遮住或顏色差異的特殊現象。成因主要是因為日、月、地球三者成線或互相遮擋而產生。
+      <div id="sunmoon_1" class="hint--bottom hint--success hint--rounded" data-hint="點擊查看詳細內容"><div id="sun_">日全蝕</div></div>
+      <div id="sunmoon_2" class="hint--bottom hint--success hint--rounded" data-hint="點擊查看詳細內容"><div id="sun_">月全蝕</div></div>
+      <div id="sunmoon_3" class="hint--bottom hint--success hint--rounded" data-hint="點擊查看詳細內容"><div id="sun_">日偏蝕</div></div>
+      <div id="sunmoon_4" class="hint--bottom hint--success hint--rounded" data-hint="點擊查看詳細內容"><div id="sun_">日環蝕</div></div>
+      </div>
+      </div>
+
     </section>
 
     <footer>
     
     <div id="footintro">
-      <div >Copyright&nbsp;&nbsp; © &nbsp;&nbsp;2015&nbsp;&nbsp; nccucs &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; About us&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Help
+      <div >Copyright&nbsp;&nbsp; © &nbsp;&nbsp;2015&nbsp;&nbsp; NCCU BA X CS X MIS &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; About us&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Help
       </div>
       <div class="fb-like" data-href="http://rabbitxdd.github.io/finalTest/learn.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
     </div>
