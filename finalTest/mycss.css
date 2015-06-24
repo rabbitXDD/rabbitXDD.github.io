@@ -23,6 +23,7 @@ background-color: rgba(207, 166, 104,0.4);
 }
 
 .sunmoon_intro {
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   font-size: 25px; 
   bottom: 0px;
   left: 750px;
@@ -38,11 +39,13 @@ background-color: rgba(207, 166, 104,0.4);
 
 
 div#main{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 	position: absolute;
 	top: 1700px;
 	left: 40%
 }
 #season_intro{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 	position: absolute;
 	font-family: 'Josefin Sans', sans-serif;
 	top: 1650px;
@@ -55,16 +58,19 @@ div#main{
 	padding: 5px;
 }
 #season_head1{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 	font-size: 50px;
 	color: #21AB38;
 }
 #season_head{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 	font-size: 90px;
 	color: white;
 	text-align: left;
 	color: #21AB38;
 }
 #season_content{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 	font-size: 25px;
 	color: white;
 margin-left: 40px;
@@ -72,6 +78,7 @@ margin-left: 40px;
 	text-align: left;
 }
 #sun_season{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 	position: absolute;
 	width: 200px;
 	height: 200px;

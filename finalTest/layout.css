@@ -4,7 +4,7 @@
 }
 nav{
   width:100%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   height:60px;
   font-size:18px;
   position: fixed;
@@ -17,7 +17,7 @@ nav{
 }
 header{
   width:100%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#f9c81e;
   background-image: url("image/11.jpg");
   height:800px;
@@ -60,7 +60,7 @@ header{
 }
 
 #date{
-	font-family:  sans-serif;
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 	color:white;
 	top:10px;
 	text-align:center;
@@ -69,7 +69,7 @@ header{
 #newbar1{
 	float:left;
   width:10%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#020202;
   color:white;
   height:700px;
@@ -79,7 +79,7 @@ header{
 #newbar2{
 float:right;
   width:10%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#020202;
   color:white;
   height:700px;
@@ -89,7 +89,7 @@ float:right;
 #new{
   word-break:break-all;
   width:90%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#020202;
   color:white;
   height:700px;
@@ -108,7 +108,7 @@ float:right;
 #historybar{
   float:left;
   width:8%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#121212;
   color:white;
   height:1200px;
@@ -118,7 +118,7 @@ float:right;
 }
 #history{
   width:100%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#121212;
   color:white;
   height:1200px;
@@ -137,6 +137,7 @@ float:right;
 article{
 }
 footer{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   width:100%;
   right:0;
   bottom: 0;

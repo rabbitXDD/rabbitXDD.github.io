@@ -173,7 +173,7 @@ header{
 #sun_Intro{
   position: absolute;
   border-radius: 10px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   width: 600px;
   height: 700px;
   left:5%;
@@ -186,7 +186,7 @@ header{
 #sunmoon_Intro{
   position: absolute;
   border-radius: 10px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   width: 400px;
   height: 700px;
   left:5%;
@@ -261,7 +261,7 @@ header{
 #moon_Intro{
   position: absolute;
   border-radius: 10px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   width: 600px;
   height: 700px;
   left:5%;
@@ -395,8 +395,7 @@ header{
 }
 #moonevent_Intro{
   position: absolute;
-  font-family: 'Josefin Sans', sans-serif;
-  top: 3250px;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   right: 5%;
   width: 300px;
   height: 700px;
@@ -412,6 +411,7 @@ header{
 
 }
 #event_Title{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   font-size: 26px;
   font-weight: bolder;
   text-align: left;
@@ -503,7 +503,7 @@ header{
     background-size: 100% 800px;
     background-repeat: no-repeat;
 
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   
   text-align:center;
   font-size:26px; 
@@ -512,7 +512,7 @@ header{
   width: 100%;
   height: 800px;
   word-break:break-all;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:white;
   background-image: url("image/sunnew.BMP");
     background-size: 100% 800px;
@@ -524,7 +524,7 @@ header{
   width: 100%;
   height: 800px;
   word-break:break-all;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#020202;
   background-image: url("image/bbbl.png");
     background-size: 100% 820px;
@@ -536,7 +536,7 @@ header{
   width: 100%;
   height: 800px;
   word-break:break-all;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#020202;
   background-image: url("image/bbbl.png");
     background-size: 100% 820px;
@@ -549,7 +549,7 @@ header{
   width: 100%;
   height: 800px;
   word-break:break-all;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:white;
   background-image: url("image/sunnew.BMP");
     background-size: 100% 800px;
@@ -590,7 +590,7 @@ header{
     margin-bottom:-55px;
     color:white;
     font-size:16px;
-    font-family:  sans-serif;
+    font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 }
 
 #Box1,#day1{
@@ -705,7 +705,7 @@ header{
 }
 
 #date{
-	font-family:  sans-serif;
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 	color:white;
 	top:10px;
 	text-align:center;
@@ -714,7 +714,7 @@ header{
 #newbar1{
 	float:left;
   width:10%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#020202;
   color:white;
   height:700px;
@@ -724,7 +724,7 @@ header{
 #newbar2{
 float:right;
   width:10%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#020202;
   color:white;
   height:700px;
@@ -734,7 +734,7 @@ float:right;
 #new{
   word-break:break-all;
   width:90%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#020202;
   color:white;
   height:700px;
@@ -754,7 +754,7 @@ float:right;
 #historybar{
   float:left;
   width:8%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#121212;
   color:white;
   height:1200px;
@@ -764,7 +764,7 @@ float:right;
 }
 #history{
   width:100%;
-  font-family:  sans-serif;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   background-color:#121212;
   color:white;
   height:1200px;
