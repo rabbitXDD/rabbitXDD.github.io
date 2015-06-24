@@ -12,6 +12,9 @@
   border-radius: 10px;
 background-color: rgba(207, 166, 104,0.4);
 }
+#sun_introduction{
+  font-family: cwtexqfangsong;
+}
 .sun_button{
 	font-family:  cwtexqfangsong;
 }
