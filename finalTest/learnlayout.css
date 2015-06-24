@@ -138,7 +138,7 @@ header{
   top: 130px;
 }
 #headerContent{
-  font-family: wt064;
+  font-family: "myfont";
   position: absolute;
   font-weight: bolder;
   margin-top: 10px;
