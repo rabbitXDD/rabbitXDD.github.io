@@ -42,7 +42,7 @@ $(document).ready(function(){
 		    	
 		            $("#comments").append(
 		              "<blockquote>"+
-		                $("#name").text() + ": " +comment.get("message")+
+		                comment.get("name") + ": " +comment.get("message")+
 		                // "<br><img src='"+ comment.get("img").url()+"' height='100px'>"+  // Practice 6
 		              "</blockquote>");
 		          }
@@ -70,9 +70,11 @@ $(document).on('submit','#commentForm',function(eventObject){
       var Comment = Parse.Object.extend("Comment") ;
       var comment = new Comment();
 
+
       comment.set("message",$("#comment").val());
       // Practice 1 記錄發文的使用者
       comment.set("targetUser", Parse.User.current()) ;
+      comment.set("name", $('#name').text());
       // Practice 5 儲存圖片
       // if ($("#fileInput")[0].files.length > 0) {
       //  var file = $("#fileInput")[0].files[0];
