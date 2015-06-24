@@ -74,20 +74,20 @@ $(document).on('submit','#commentForm',function(eventObject){
       // Practice 1 記錄發文的使用者
       comment.set("targetUser", Parse.User.current()) ;
       // Practice 5 儲存圖片
-      if ($("#fileInput")[0].files.length > 0) {
-       var file = $("#fileInput")[0].files[0];
-       var name = "photo";
-       var parseImg = new Parse.File(name, file);
-       comment.set("img",parseImg);
-       parseImg.save({
-       success : function (savedImg){
-       alert(savedImg.url());
-       },
-       error : function (saveingImg , errorObject){
-       alert(errorObject.message) ;
-       }
-       });
-      }
+      // if ($("#fileInput")[0].files.length > 0) {
+      //  var file = $("#fileInput")[0].files[0];
+      //  var name = "photo";
+      //  var parseImg = new Parse.File(name, file);
+      //  comment.set("img",parseImg);
+      //  parseImg.save({
+      //  success : function (savedImg){
+      //  alert(savedImg.url());
+      //  },
+      //  error : function (saveingImg , errorObject){
+      //  alert(errorObject.message) ;
+      //  }
+      //  });
+      // }
       comment.save({
         success : function(savedParseObject){
           alert("留言成功");
