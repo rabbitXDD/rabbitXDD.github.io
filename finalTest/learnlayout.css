@@ -138,7 +138,7 @@ header{
   top: 130px;
 }
 #headerContent{
-  font-family: 'myfont';
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   position: absolute;
   font-weight: bolder;
   margin-top: 10px;

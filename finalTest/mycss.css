@@ -1,5 +1,5 @@
 .sun_intro {
-  font-family: 'myfont';
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   font-size: 25px; 
   top: -35px;
   left: 750px;
@@ -13,10 +13,10 @@
 background-color: rgba(207, 166, 104,0.4);
 }
 #sun_introduction{
-  font-family: 'myfont';
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 }
 .sun_button{
-	font-family:  'myfont';
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 }
 
 .sunmoon_intro {
