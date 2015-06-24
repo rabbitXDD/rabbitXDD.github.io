@@ -118,6 +118,9 @@ $(document).on('click','#logoutBtn',function(e){
 	e.preventDefault();
 	logout();
 });
+$(document).on('click','#backBtn',function(){
+	window.location.assign("http://rabbitxdd.github.io/finalTest/learn.html");
+});
 function loginView(){
 	$('#logoutBtn').hide();
 	$('#indexView').hide();
