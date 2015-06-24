@@ -272,6 +272,7 @@ header{
 }
 
 #moon_Content{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   margin-left: 40px;
   margin-right: 20px;
   font-weight: bolder;
@@ -480,12 +481,14 @@ header{
   text-align: left;
   }
 #sun_Title{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   font-size: 40px;
   font-weight: bolder;
   color:rgb(108, 12, 10);
   text-align: left;
 }
 #moon_Title{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   font-size: 40px;
   font-weight: bolder;
   color:rgb(108, 12, 10);
