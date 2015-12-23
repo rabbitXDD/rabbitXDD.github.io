@@ -7,9 +7,9 @@
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
           <link rel="stylesheet" href="css/reset.css">	
           <link rel="stylesheet" href="css/main.css">
-          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+		  <script type="text/javascript" src="https://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
 		  
 		  <style>
 			#container{
@@ -90,14 +90,14 @@
 
 
         window.fbAsyncInit = function() {
-      Parse.FacebookUtils.init({
-      appId      : '1652401031642744',
-	  status : true, // check Facebook Login status
-	  cookie : true, // enable cookies to allow Parse to access the session
-	  xfbml : true, // initialize Facebook social plugins on the page
-	  version : 'v2.3' // point to the latest Facebook Graph API version
-    });
-  };
+		      Parse.FacebookUtils.init({
+		      appId      : '144695432559956',
+			  status : true, // check Facebook Login status
+			  cookie : true, // enable cookies to allow Parse to access the session
+			  xfbml : true, // initialize Facebook social plugins on the page
+			  version : 'v2.5' // point to the latest Facebook Graph API version
+		    });
+		  };
 
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
@@ -118,19 +118,7 @@
 			      alert("透過臉書登入成功");
 			    }
 				indexView();//切換至預先寫好登入後的介面
-				FB.getLoginStatus(function(response) {
-				     if (response.status === 'connected') {
-				         FB.api('/me/picture?type=large', function (response) {
-						    $('#fbImgView').html("<h5>Here are your profile photo</h5><img src="+response.data.url+" crossorigin=\"anonymous\" id=preview1 />");          
-				         });
-						 
-				         FB.api('/me', function (response) {
-							 console.log(response);
-							 $('#fbImgView').append("<h1>Welcome , "+(response['gender']=="male"?"Mr. ":"Miss ")+" "+response['first_name']+"</h1>");
-				         });
-						
-				     }
-			     }); 
+				 
 			  },
 			  error: function(user, error) {
 			    alert("使用者取消登入或沒有授權");

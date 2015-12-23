@@ -1,26 +1,27 @@
 $(document).ready(function(){
 	var current = Parse.User.current();
-	console.log(current);
+	//console.log(current);
 	if(current){
 	    var a = setTimeout(function(){
 			FB.getLoginStatus(function(response) {
 			     if (response.status === 'connected') {
+			     	console.log(response);
 			         uid = response.authResponse.userID;
 			         
 			         accessToken = response.authResponse.accessToken;
 			         FB.api('/me/picture?type=large', function (response) {
+			         	console.log(response);
 					    $('#fbImgView').html("<h5>Here are your profile photo</h5><img src="+response.data.url+" crossorigin=\"anonymous\" id=preview1 />");          
 			         });
-				 
-			         FB.api('/me', function (response) {
+			         
+				  	
+			         FB.api('/me', {fields: 'gender, first_name, last_name, email, likes'},function (response) {
 						 console.log(response);
+						 
 						$('#fbImgView').append("<h1>Welcome , "+(response['gender']=="male"?"Mr. ":"Miss ")+" "+response['first_name']+"</h1>");
-						$("#name").text(response['first_name']);
+						$("#name").text(response.first_name);
 			         });
 			         	
-
-
-				     console.log(Parse.User.current());
 
 
 		      // Practice 2  這裏要補充兩行不見的程式碼
@@ -119,7 +120,7 @@ $(document).on('click','#logoutBtn',function(e){
 	logout();
 });
 $(document).on('click','#backBtn',function(){
-	window.location.assign("http://rabbitxdd.github.io/finalTest/learn.html");
+	window.location.assign("https://web-programming-rabbitxdd.c9users.io/finalTest/learn.html");
 });
 function loginView(){
 	$('#logoutBtn').hide();
