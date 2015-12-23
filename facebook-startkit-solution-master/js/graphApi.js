@@ -120,7 +120,7 @@ $(document).on('click','#logoutBtn',function(e){
 	logout();
 });
 $(document).on('click','#backBtn',function(){
-	window.location.assign("https://web-programming-rabbitxdd.c9users.io/finalTest/learn.html");
+	window.location.assign("http://rabbitxdd.github.io/finalTest/learn.html");
 });
 function loginView(){
 	$('#logoutBtn').hide();
