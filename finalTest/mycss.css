@@ -1,0 +1,138 @@
+body{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+}
+.sun_intro {
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  font-size: 25px; 
+  top: -35px;
+  left: 750px;
+  width: 510px;
+  height: 225px;
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: rgba(239, 225, 205,1);
+  border-radius: 10px;
+background-color: rgba(207, 166, 104,0.4);
+}
+#sun_introduction{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+}
+.sun_button{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+}
+
+.sunmoon_intro {
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  font-size: 25px; 
+  bottom: 0px;
+  left: 750px;
+  width: 510px;
+  height: 225px;
+  position: absolute;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: rgba(239, 225, 205,1);
+  border-radius: 10px;
+background-color: rgba(207, 166, 104,0.4);
+}
+
+
+div#main{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+	position: absolute;
+	top: 1700px;
+	left: 40%
+}
+#season_intro{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+	position: absolute;
+	font-family: 'Josefin Sans', sans-serif;
+	top: 1650px;
+	right: 5%;
+	width: 500px;
+	height: 700px;
+	background-color: rgba(189,193,216,0.2);
+
+	border-radius: 10px;
+	padding: 5px;
+}
+#season_head1{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+	font-size: 50px;
+	color: #21AB38;
+}
+#season_head{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+	font-size: 90px;
+	color: white;
+	text-align: left;
+	color: #21AB38;
+}
+#season_content{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+	font-size: 25px;
+	color: white;
+margin-left: 40px;
+  margin-right: 20px;
+	text-align: left;
+}
+#sun_season{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 185px;
+	left: -250px;
+}
+
+div #north,div #west,div #south,div #east{
+    margin-top: -100px;
+    margin-left: -650px;
+}
+
+div #north{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	top:70px;
+	left: 380px;
+	right:400px;
+	
+}
+div #west{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	top:270px;
+	left: 130px;
+	
+}
+div #south{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	top:500px;
+	left: 380px;
+	right:400px;
+	
+}
+div #east{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	top:270px;
+	left: 630px;
+	
+}
+#sun_season{
+	opacity: 1;
+}
+div#main img{
+	opacity: 0.65;
+}
+/*pointer*/
+
+.pointer {
+   cursor: pointer; 
+}

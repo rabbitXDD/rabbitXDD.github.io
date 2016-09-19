@@ -1,0 +1,831 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+#paper{
+  position: absolute;
+  left:580px;
+  bottom: 230px;
+}
+#next1{
+  position: absolute;
+  
+  right:50px;
+  top:1450px;
+  
+}
+#next2{
+  position: absolute;
+  
+  left:50px;
+  top:2250px;
+  
+}
+#next3{
+  position: absolute;
+  
+  right:50px;
+  top:3050px;
+  
+}
+#next4{
+  position: absolute;
+  
+  left:50px;
+  top:3850px;
+  
+}
+#next5{
+  position: absolute;
+  
+  right:50px;
+  top:4650px;
+  
+}
+#button1{
+  margin-right: 20px;
+  margin-top: 620px;
+}
+#page-container{
+  position:relative;
+}
+.modal-content{
+
+}
+.sunmoon_intro{
+  color:black;
+  text-align: left;
+}
+#foot1{
+  border: 0px;
+  height:700px;
+  width:1200px;
+  margin-left: -300px;
+  background-image: url("image/suni.png");
+}
+#foot2{
+  border: 0px;
+  height:700px;
+  width:1200px;
+  margin-left: -300px;
+  background-image: url("image/seasoni.png");
+}
+#foot3{
+  border: 0px;
+  height:700px;
+  width:1200px;
+  margin-left: -300px;
+  background-image: url("image/mooni.png");
+}
+#foot4{
+  border: 0px;
+  height:690px;
+  width:1200px;
+  margin-left: -300px;
+  background-image: url("image/mooneventi.png");
+}
+#foot5{
+  border: 0px;
+  height:700px;
+  width:1200px;
+  margin-left: -300px;
+  background-image: url("image/sunmooni.png");
+}
+#foot6{
+  border: 0px;
+  height:700px;
+  width:1200px;
+  margin-left: -300px;
+  background-image: url("image/endi.png");
+}
+nav{
+  font-family: 'Lobster', cursive;
+  width:100%;
+  
+  height:60px;
+  font-size:18px;
+  position: fixed;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1; 
+  border-style: solid;
+  border-width: 1px;
+}
+header{
+  width:100%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color:#f9c81e;
+  background-image: url("image/背景new.png");
+  background-size: 100% 800px;
+  background-repeat: no-repeat;
+  height:800px;
+  color:black;
+  text-align:center;
+  vertical-align: middle;
+  
+  font-size:82px;　
+}
+#headerSlide{
+  position: absolute;
+  width: 100%;
+  top: 130px;
+  height:150px;
+  background-color: rgba(54,81,110,0.4);
+}
+#headerTitle{
+  font-family: 'Lobster', cursive;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 130px;
+}
+#headerContent{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  position: absolute;
+  font-weight: bolder;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  top: 230px;
+  font-size: 24px;
+}
+#headerButton{
+  
+  position: absolute;
+
+  font-family: 'Playfair Display', serif;
+  color:white;
+  background-color: rgba(50,94,142,0.8);
+  width: 200px;
+  margin-top: 360px;
+  right:43%;
+  height:200px;
+  
+  border-radius:100px;
+  font-size: 32px;
+
+}
+#headerButton:hover{
+  background-color: rgba(50,94,142,1.0);
+}
+
+#headerButtonContent{
+  margin-top: 45px;
+}
+#sun_Intro{
+  position: absolute;
+  border-radius: 10px;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  width: 600px;
+  height: 700px;
+  left:5%;
+  top:850px;
+  color:black;
+  background-color:rgba(255, 255, 255, 0.4);
+  text-align: left;
+}
+
+#sunmoon_Intro{
+  position: absolute;
+  border-radius: 10px;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  width: 400px;
+  height: 700px;
+  left:5%;
+  top:4050px;
+  color:black;
+  background-color:rgba(255, 255, 255, 0.4);
+  text-align: left;
+}
+#sunmoon_1{
+  position: absolute;
+  bottom:50px;
+  left:60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
+  color:black;
+  font-size: 18px;
+}
+#sunmoon_2{
+  position: absolute;
+  bottom:50px;;
+  left:140px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: rgb(172,172,172);
+  color:rgb(62,61,61);
+  font-size: 18px;
+}
+#sunmoon_3{
+  position: absolute;
+  bottom:50px;;
+  left:220px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color:rgb(62,61,61);
+  color: rgb(172,172,172);
+  font-size: 18px;
+}
+#sunmoon_4{
+  position: absolute;
+  bottom:50px;;
+  left:300px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: black;
+  color:white;
+  font-size: 18px;
+}
+#sunmoonResult{
+  border-radius: 10px;
+
+  padding:10px;
+  left:115px;
+  position: absolute;
+  bottom:200px;
+}
+#sunmoon_Content{
+  margin-left: 40px;
+  margin-right: 20px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+#sun_Content{
+  margin-left: 40px;
+  margin-right: 20px;
+  font-weight: bolder;
+}
+#moon_Intro{
+  position: absolute;
+  border-radius: 10px;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  width: 600px;
+  height: 700px;
+  left:5%;
+  top:2650px;
+  color:black;
+  background-color:rgba(255, 255, 255, 0.4);
+  text-align: left;
+}
+
+#moon_Content{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  margin-left: 40px;
+  margin-right: 20px;
+  font-weight: bolder;
+  font-size: 24px;
+}
+#sun_{
+  
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+#sun_1{
+  position: absolute;
+  top:1370px;
+  left:180px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color:rgba(255, 255, 255, 0.8);
+  color: black;
+  font-size: 18px;
+}
+#sun_1:hover{
+   -moz-transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -o-transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3);
+    transform:scale(1.3,1.3);
+  }
+#sun_2:hover{
+  -moz-transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -o-transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3);
+    transform:scale(1.3,1.3);
+  }
+#sun_3:hover{
+  -moz-transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -o-transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3);
+    transform:scale(1.3,1.3);
+  }
+#sun_4:hover{
+  -moz-transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -o-transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3);
+    transform:scale(1.3,1.3);
+  }
+  #sunmoon_1:hover{
+   -moz-transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -o-transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3);
+    transform:scale(1.3,1.3);
+  }
+#sunmoon_2:hover{
+  -moz-transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -o-transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3);
+    transform:scale(1.3,1.3);
+  }
+#sunmoon_3:hover{
+  -moz-transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -o-transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3);
+    transform:scale(1.3,1.3);
+  }
+#sunmoon_4:hover{
+  -moz-transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -o-transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3);
+    transform:scale(1.3,1.3);
+  }
+#sun_2{
+  position: absolute;
+  top:1370px;
+  left:280px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  color: black;
+  background-color:rgba(153, 130, 77, 0.9);
+}
+#sun_3{
+  position: absolute;
+  top:1370px;
+  left:380px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  color: black;
+  background-color:rgba(157, 95, 71, 0.8);
+}
+#sun_4{
+  position: absolute;
+  top:1370px;
+  left:480px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  color: black;
+  background-color:rgba(137, 59, 64, 0.9);
+}
+
+#moon_Intro{
+  position: absolute;
+  border-radius: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+
+  width: 600px;
+  height: 700px;
+  left:5%;
+  top:2450px;
+  color:black;
+  background-color:rgba(255, 255, 255, 0.4);
+}
+#moonevent_Intro{
+  position: absolute;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  right: 5%;
+  width: 300px;
+  height: 700px;
+  background-color: rgba(189,193,216,0.2);
+  text-align: left;
+  border-radius: 10px;
+  padding: 5px;
+  color:white;
+  margin-top: 40px;
+}
+#moonevent_Intro >p{
+  font-size: 70px;
+  color : #21AB38;
+  
+}
+#event_Title{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: left;
+  color : #21AB38;
+}
+#Introimg{
+  margin-left: 700px;
+  margin-top: 80px;
+}
+#moonimg{
+  margin-left: 700px;
+  margin-top: -250px;
+}
+#moon2{
+  
+  position: absolute;
+  left: 940px;
+  bottom: 410px;
+}
+#moon3{
+  
+  position: absolute;
+  left: 850px;
+  bottom: 410px;
+}
+#moon4{
+
+  position: absolute;
+  left: 1300px;
+  bottom: 410px;
+}
+#moon5{
+  
+  position: absolute;
+  left: 940px;
+  bottom: 470px;
+}
+#astroimg{
+  margin-left: 300px;
+  margin-top: 80px;
+}
+.sun_intro{
+  text-align: left;
+  margin-left: 300px;
+  background-color: rgba(207, 166, 104,0.7);
+}
+#sun_Intro>p{
+  font-size: 90px;
+  
+  font-weight: bolder;
+  color:rgb(108, 12, 10);
+  text-align: left;
+  }
+  #moon_Intro>p{
+  font-size: 90px;
+  
+  font-weight: bolder;
+  color:rgb(108, 12, 10);
+  text-align: left;
+  }
+  #sunmoon_Intro>p{
+  font-size: 90px;
+  
+  font-weight: bolder;
+  color:rgb(108, 12, 10);
+  text-align: left;
+  }
+#sun_Title{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color:rgb(108, 12, 10);
+  text-align: left;
+}
+#moon_Title{
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color:rgb(108, 12, 10);
+  text-align: left;
+}
+#moonTitle{
+  font-size: 50px;
+}
+#sunIntro{
+  width: 100%;
+
+  height: 800px;
+  word-break:break-all;
+  background-image: url("image/sunnew.BMP");
+    background-size: 100% 800px;
+    background-repeat: no-repeat;
+
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  
+  text-align:center;
+  font-size:26px; 
+}
+#moonIntro{
+  width: 100%;
+  height: 800px;
+  word-break:break-all;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  background-color:white;
+  background-image: url("image/sunnew.BMP");
+    background-size: 100% 800px;
+  background-repeat: no-repeat;
+  text-align:center;
+  font-size:26px; 
+}
+#season{
+  width: 100%;
+  height: 800px;
+  word-break:break-all;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  background-color:#020202;
+  background-image: url("image/bbbl.png");
+    background-size: 100% 820px;
+  background-repeat: no-repeat;
+  text-align:center;
+  font-size:26px; 
+}
+#moonevent{
+  width: 100%;
+  height: 800px;
+  word-break:break-all;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  background-color:#020202;
+  background-image: url("image/bbbl.png");
+    background-size: 100% 820px;
+    background-repeat: no-repeat;
+  text-align:center;
+  font-size:26px; 
+ 
+}
+#sunmoonevent{
+  width: 100%;
+  height: 800px;
+  word-break:break-all;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  background-color:white;
+  background-image: url("image/sunnew.BMP");
+    background-size: 100% 800px;
+    background-repeat: no-repeat;
+  text-align:center;
+  font-size:26px; 
+}
+
+/*moon event img*/
+#earth{
+  position:absolute;
+  bottom:1200px;
+  margin-bottom:-25px;
+  margin-right: 70px;
+  right:42%;
+}
+#sun{
+  position:absolute;
+  bottom:1050px;
+  margin-bottom:-25px;
+  left:-275px;
+}
+
+
+#Box2,#Box3,#Box4,#Box5,#Box6,#Box7,#Box8,#Box1{
+    width:100px;
+    height:100px;
+    padding:10px;
+    
+    background-color: rgba(189,193,216,0.2);
+    border-radius: 10px;
+    float:left;
+    margin-bottom:-25px;
+    margin-right:80px;
+}
+#day1,#day2,#day3,#day4,#day5,#day6,#day7,#day8{
+    margin-right:113px;
+    margin-bottom:-55px;
+    color:white;
+    font-size:16px;
+    font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+}
+
+#Box1,#day1{
+  position: absolute;
+  bottom:1450px;
+  right:45%;
+}
+#Box2,#day2{
+  position: absolute;
+  bottom:1400px;
+  right:32%;
+}
+#Box3,#day3{
+  position: absolute;
+  bottom:1250px;
+  right:25%;
+}
+#Box4,#day4{
+  position: absolute;
+  bottom:1100px;
+  right:32%;
+}
+#Box5,#day5{
+  position: absolute;
+  bottom:1050px;
+  right:45%;
+}
+#Box6,#day6{
+  position: absolute;
+  bottom:1100px;
+  right:58%;
+}
+#Box7,#day7{
+  position: absolute;
+  bottom:1250px;
+  right:65%;
+}
+#Box8,#day8{
+  position: absolute;
+  bottom:1400px;
+  right:58%;
+}
+#moonResult{
+  position: absolute;
+  bottom:1190px;
+  right:8%;
+  margin-bottom:85px;
+  margin-right: 0px;
+}
+#mResult{
+  position: absolute;
+  bottom:1130px;
+  right:12%;
+  color:white;
+  margin-bottom:85px;
+  margin-right: 0px;
+}
+#dateResult{
+  position: absolute;
+  bottom:1390px;
+  right:13%;
+  color:white;
+  font-size:28px;
+  margin-bottom:-65px;
+  margin-right: 130px;
+}
+
+#earth2{
+  position:absolute;
+  bottom:400px;
+  margin-bottom:-25px;
+  margin-right: 70px;
+  left:1050px;
+}
+#sun2{
+  position:absolute;
+  bottom:300px;
+  margin-bottom:-25px;
+  left:450px;
+}
+
+.navBar ul li {
+    display: inline;
+    float:left;
+    margin-top: -20px;
+}
+.navBar ul li a{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    line-height: 70px;
+    text-decoration: none;
+    vertical-align: middle; 
+    color: #787878;
+}
+.navBar ul li a:hover{
+    color: #ffffff;
+}
+#historynav:hover div{
+  display: block;
+}
+#subnav{
+	padding-left: 0px;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+    float: left;
+    position: absolute;
+    left: 250px;    
+    margin: 0;
+}
+
+#date{
+	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+	color:white;
+	top:10px;
+	text-align:center;
+	font-size:26px;
+}
+#newbar1{
+	float:left;
+  width:10%;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  background-color:#020202;
+  color:white;
+  height:700px;
+  text-align:center;
+  font-size:26px; 
+}
+#newbar2{
+float:right;
+  width:10%;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  background-color:#020202;
+  color:white;
+  height:700px;
+  text-align:center;
+  font-size:26px; 
+}
+#new{
+  word-break:break-all;
+  width:90%;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  background-color:#020202;
+  color:white;
+  height:700px;
+
+  text-align:center;
+  font-size:26px; 
+}
+
+#newsec{
+	line-height: 350px;
+    vertical-align: middle;
+}
+#passage{
+	font-size:14px; 
+	color: #565656;
+}
+#historybar{
+  float:left;
+  width:8%;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  background-color:#121212;
+  color:white;
+  height:1200px;
+  
+  text-align:center;
+  font-size:26px;
+}
+#history{
+  width:100%;
+  font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  background-color:#121212;
+  color:white;
+  height:1200px;
+
+  text-align:center;
+  font-size:26px;
+  
+}
+#historyline{
+	float:left;
+	
+	width:5px;
+	height:375px;
+	background-color: white;
+}
+article{
+}
+footer{
+  width:100%;
+  right:0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color:#fffaf3;
+  height:30px;
+  font: 1em/1.5 serif;
+  text-align:center;
+  position: fixed;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+#footintro{
+  margin-top: 5px;
+
+}
+.fb-like{
+  position: absolute;
+  top:-22px;
+  left: 500px;
+}
+
+.footBar ul li {
+    display: inline;
+    float:left;
+    margin-top: -30px;
+}
+.footBar ul li a{
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    padding-bottom: 15px;
+    display: block;
+    line-height: 70px;
+    text-decoration: none;
+    vertical-align: middle; 
+    color: #787878;
+}
+.footBar ul li a:hover{
+    color: #ffffff;
+}

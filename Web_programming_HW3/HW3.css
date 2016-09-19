@@ -1,0 +1,146 @@
+    	body{
+    		background: url(http://i.imgur.com/8xCZh8r.png);
+    		
+    	}
+		header{
+			margin-top:35px;
+			color: #FFFFFF;
+      height: 213px;
+			border-top: solid 1px #F7F1E8;
+			background: rgba(0,0,0,1) url(http://i.imgur.com/RbcA26H.png);
+      background-size: 1200px 250px;
+      background-repeat: no-repeat;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+		header h1{
+		  margin-top:40px;
+	   	  text-shadow: 0px 2px 1px #3F372B;
+		}
+		nav {
+  	padding:5px 0;
+		border-top: solid 1px #FC403C;
+		border-bottom: solid 1px #B60000;
+		background: #DE2211 ;
+}
+		nav a {
+			color: rgba(255,255,255,1);
+			font-size: 1.5em;
+		    font-family: monospace;
+			text-decoration: none;
+		}
+		#search {	
+			margin-top:50px;
+		}
+    	article{
+    		font-size: 18px;
+    	}
+    	
+		h3{
+			border-bottom: 1px solid;
+			font-color: rgb(22,1,235);
+			font: 1.4em/1.5 serif;
+			font-family: 正黑體;
+			font-weight: bolder;
+		}
+	    
+		img#form{
+			position: relative;
+			width:20%;
+		    padding:0.5em;
+		    border-radius: 10px;
+			left: 6em;
+		    /*background-color:rgba(115,194,197,0.3);*/
+		}
+		div#core{
+			padding-top: 1.5em;
+		}
+
+	    #bottom{
+	    	padding-bottom:40px;
+	    }
+ol.schedule {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+     
+    margin: 0;
+    margin-left: 3em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+}
+ol.schedule > li{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 1em;
+    border-left: 2px solid #CCCCCC;
+    background-color: #f5f5f5;
+}
+ol.schedule > li:before {
+    position: absolute;
+    top: 0;
+    left: -0.95em;
+    width: 1em;
+ 
+    font-size: 3em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    color: #464646;
+     
+    transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    z-index: -99;
+    overflow: hidden;
+     
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+	    ol>li:nth-child(odd){
+			background-color:rgba(255,255,255,0.5);
+	    }
+
+		/*article li:hover{
+			background-color: rgba(50,198,145,0.4);
+		}*/
+
+		article div:hover{
+			background-color: rgba(243,223,203,0.3);
+		}
+
+		ul.non_style{
+			list-style-type: none;
+		}
+		/* This code is tested with latest version of Firefox and Chrome */
+.box {
+  position: relative;
+  width: 320px;
+  height: 270px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+  border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
+}
+.box:before {
+      position: absolute;
+      width: 88%;
+      height: 47%;
+      left: 6%;
+      border-radius: 44%;
+      z-index: -1;
+      top: 0%;
+      content: "";
+      box-shadow: 0 -15px 28px rgba(0,0,0,0.35);
+      }
+.box:after {
+      position: absolute;
+      width: 88%;
+      height: 47%;
+      left: 6%;
+      border-radius: 44%;
+      z-index: -1;
+      bottom: 0%;
+      content: "";
+      box-shadow: 0 15px 28px rgba(0,0,0,0.35);
+      }

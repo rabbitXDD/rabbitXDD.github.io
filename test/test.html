@@ -1,0 +1,56 @@
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+var AJAX_Work=function(inputURL){
+        $.ajax({
+               url: inputURL,
+               data: $('#sentToBack').serialize(),
+               type:"POST",
+               dataType:'text',
+               async: false,
+               success: function(msg){
+                   alert(msg);
+               },
+               beforeSend:function(){
+                      
+               },
+               complete:function(){
+                      $('#loadingIMG').hide();
+               },
+              error:function(xhr, ajaxOptions, thrownError){ 
+                      alert(xhr.status); 
+                      alert(thrownError); 
+               }
+         });
+}
+
+
+var Submit=function(){
+       var URLs="back.php";
+       $('#loadingIMG').show();
+       
+       setTimeout(function(){
+              AJAX_Work(URLs,"");
+       },1);
+
+
+}
+
+
+</script>
+</head>
+<body>
+<form id="sentToBack">
+      <input type="text" name="Text"/> 
+      <input type="button" value="送出" onClick="Submit()"/>
+</form>
+
+<div id="loadingIMG" style="display:none"><img src="loading.gif" height='14'/>資料處理中，請稍後。</div>
+
+</body>
+</html>
